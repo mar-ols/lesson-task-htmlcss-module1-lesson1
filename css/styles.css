@@ -1,0 +1,32 @@
+header,
+footer {
+  color: #ffffffff;
+  background-color: #202020;
+}
+
+header a {
+  color: #ffffffff;
+}
+
+.cta {
+  color: #ffffffff;
+  background-color: #bb0000;
+  font-size: 1.5em;
+  border-radius: 3px;
+}
+
+.cta-sale {
+  background-color: #127300;
+}
+
+.reviews {
+  background-color: #e8e8e8;
+}
+
+.featured--products {
+  background-color: #fbfbfb;
+}
+
+footer {
+  text-align: center;
+}
