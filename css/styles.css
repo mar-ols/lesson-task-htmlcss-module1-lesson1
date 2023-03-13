@@ -50,3 +50,21 @@ header a {
 footer {
   text-align: center;
 }
+
+/* Home Page */
+.welcome {
+  background-image: url("../images/home-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  height: 70vh;
+}
+
+.selling-points_images {
+  border-radius: 100px;
+}
+
+.reviews_images {
+  border-radius: 50%;
+}
