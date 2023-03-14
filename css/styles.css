@@ -18,14 +18,31 @@ h2,
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
 header,
 footer {
   color: #ffffffff;
   background-color: #202020;
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+
 header a {
   color: #ffffffff;
+}
+
+.active-page {
+  text-decoration: underline;
 }
 
 .cta {
