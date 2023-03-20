@@ -39,6 +39,7 @@ a {
 
 header a {
   color: #ffffffff;
+  padding: 10px;
 }
 
 .active-page {
@@ -46,12 +47,18 @@ header a {
 }
 
 .cta {
+  display: inline-block;
   color: #ffffffff;
   background-color: #bb0000;
-  font-size: 1.5em;
-  border-radius: 3px;
-  text-decoration: none;
-  padding: 0px 5px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px 80px;
+}
+
+.cta-small {
+  padding: 8px 30px;
+  font-size: 0.8em;
 }
 
 .cta-sale {
@@ -62,7 +69,7 @@ header a {
   background-color: #e8e8e8;
 }
 
-.featured--products {
+.featured_products {
   background-color: #fbfbfb;
 }
 
