@@ -22,11 +22,11 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <h1>Contact</h1>
-        <div>
-          <form>
+    <main class="contact">
+      <h1>Contact</h1>
+      <form>
+        <div class="form-wrapper">
+          <section>
             <label for="full-name">Full name</label>
             <input type="text" id="full-name" name="full-name" />
             <label for="email">Email</label>
@@ -37,14 +37,18 @@
               <option value="Adirondack Blue">Adirondack Blue</option>
               <option value="Adirondack Green">Adirondack Green</option>
             </select>
-            <input type="checkbox" id="signup" />
-            <label for="signup">Sign up for email updates.</label>
+            <div>
+              <input type="checkbox" id="signup" />
+              <label for="signup">Sign up for email updates.</label>
+            </div>
+          </section>
+          <section>
             <label for="message">Message</label>
             <textarea id="message" name="message"></textarea>
-            <input type="submit" value="Send now" class="cta" />
-          </form>
+          </section>
         </div>
-      </section>
+        <input type="submit" value="Send now" class="cta" />
+      </form>
     </main>
     <footer>Copyright &copy;</footer>
   </body>
