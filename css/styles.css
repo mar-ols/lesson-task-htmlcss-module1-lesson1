@@ -5,6 +5,10 @@
 
 body {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 h1,
@@ -70,8 +74,12 @@ header a {
 }
 
 .cta-small {
-  padding: 8px 30px;
+  padding: 8px 20px;
   font-size: 0.8em;
+  grid-column: 2;
+  grid-row: 2 / 4;
+  min-width: 51.2px;
+  text-align: center;
 }
 
 .cta-sale {
@@ -82,12 +90,36 @@ header a {
   background-color: #e8e8e8;
 }
 
-.featured_products {
+.products {
   background-color: #fbfbfb;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.products img {
+  grid-column: -1 / 1;
+}
+
+.products h2,
+.products h3,
+.products p {
+  grid-column: 1;
+  font-size: 0.9em;
+  margin: 5px;
+}
+
+.products--sale {
+  display: flex;
+}
+
+.old-price {
+  text-decoration: line-through;
 }
 
 footer {
   text-align: center;
+  padding: 20px;
 }
 
 /* Home Page */
@@ -151,6 +183,18 @@ footer {
   float: right;
 }
 
+.featured {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 50px auto;
+  gap: 10px;
+}
+
+.featured h2 {
+  grid-column: -1 / 1;
+}
+
 /* Contact page */
 input,
 select,
@@ -212,4 +256,17 @@ textarea {
   display: flex;
   gap: 10px;
   margin-top: 5px;
+}
+
+/* Guitar page */
+
+.guitars {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
